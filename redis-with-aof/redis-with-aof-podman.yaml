@@ -14,8 +14,8 @@ spec:
           mountPath: /var/lib/redis/
       ports:
         - hostIP: 127.0.0.1
-          hostPort: 16739
-          containerPort: 6739
+          hostPort: 16379
+          containerPort: 6379
       command: ['redis-server', '/etc/redis/redis.conf']
   
   volumes:
