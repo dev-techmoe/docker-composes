@@ -1,0 +1,10 @@
+services:
+  redis:
+    - name: app
+      image: docker.io/redis:7.2.3-alpine
+      volumes:
+        - ./redis.conf:/etc/redis/redis.conf
+        - ./data:/var/lib/redis/
+      ports:
+        - 127.0.0.1:16739:6739
+      command: redis-server /etc/redis/redis.conf
