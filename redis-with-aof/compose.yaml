@@ -7,3 +7,4 @@ services:
     ports:
       - 127.0.0.1:16739:6739
     command: redis-server /etc/redis/redis.conf
+    restart: always
