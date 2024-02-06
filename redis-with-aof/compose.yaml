@@ -1,6 +1,5 @@
 services:
   redis:
-    name: app
     image: docker.io/redis:7.2.3-alpine
     volumes:
       - ./redis.conf:/etc/redis/redis.conf
